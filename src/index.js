@@ -3,6 +3,7 @@ const express = require("express")
 const cors = require("cors")
 const mongoose = require("mongoose")
 const userRouter = require("./routes/users")
+const exerciseRouter = require("./routes/exercises")
 
 dotenv.config()
 
@@ -14,6 +15,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/users', userRouter)
+app.use('/exercises', exerciseRouter)
 
 mongoose.connect(MONGO_URI, {useNewUrlParser:true, useUnifiedTopology: true} , (err) => {
     if(err){

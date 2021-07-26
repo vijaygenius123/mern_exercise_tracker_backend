@@ -8,5 +8,5 @@ Content-Type: application/json
 
 
 {
-"username": "vijay"
+  "username": "vijay"
 }

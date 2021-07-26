@@ -1,0 +1,15 @@
+
+GET http://localhost:8000/exercises/
+
+###
+
+POST http://localhost:8000/exercises
+Content-Type: application/json
+
+
+{
+  "username": "vijay",
+  "description": "Treadmill Run",
+  "duration": 30,
+  "date": "2021-07-26T08:30:00.000Z"
+}
