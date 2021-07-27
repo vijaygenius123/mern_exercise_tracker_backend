@@ -11,5 +11,28 @@ Content-Type: application/json
   "username": "vijay",
   "description": "Treadmill Run",
   "duration": 30,
-  "date": "2021-07-26T08:30:00.000Z"
+  "date": "2021-07-25T08:30:00.000Z"
+}
+
+###
+
+GET http://localhost:8000/exercises/60fedf7d941704c60e32c093
+
+
+###
+
+DELETE http://localhost:8000/exercises/61003119519ffecc27235b12
+
+###
+
+
+POST http://localhost:8000/exercises/update/60fedf7d941704c60e32c093
+Content-Type: application/json
+
+
+{
+  "username": "vijay",
+  "description": "Treadmill Run",
+  "duration": 30,
+  "date": "2021-07-27T08:30:00.000Z"
 }
